@@ -16,7 +16,7 @@ class Solution:
                 start = mid
             else:
                 end = mid
-        
+        # this here primary because if len of the nums is only 1, which cause binary seaach on the top no going to to run, so we can check if ther is target in the nums
         if nums[start] == target and nums[end] == target:
             return [start, end]
         if nums[end] == target:
